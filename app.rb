@@ -7,11 +7,10 @@ class App < Sinatra::Base
   end
 
   post '/' do
-    binding.pry
     @name = params[:name]
     @beed = params[:breed]
     @age = params[:age]
-    
+
     erb :display_puppy
   end
 
