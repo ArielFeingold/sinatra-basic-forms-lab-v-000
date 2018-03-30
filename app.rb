@@ -7,6 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/' do
+    binding.pry
     @name = params[:name]
     erb :display_puppy
   end
