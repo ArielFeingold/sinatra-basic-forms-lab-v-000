@@ -6,8 +6,9 @@ class App < Sinatra::Base
     erb :index
   end
 
-  post '/new' do
-
+  post '/' do
+    @name = params[:name]
+    erb :display_puppy
   end
 
   get '/new' do
